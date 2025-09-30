@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form method="get" action="basicTags.html">
+    <fieldset>
+        <legend>My Registraion Form</legend>
+        <label >First Name
+        <input type="text" placeholder="Enter your first name" required minlength="2" maxlength="7" autocomplete="" autofocus name="fn">
+        </label>
+<br>
+<br>
+         <label>Last Name
+        <input type="text" placeholder="Enter your Last name" required name="ln">
+        </label>
+<br>
+<br>
+        <label>Email
+        <input type="email" placeholder="Enter your email" required>
+        </label>
+<br>
+<br>
+        <label>Password
+        <input type="password" placeholder="Enter your password" required>
+        </label>
+<br>
+<br>        
+        <label>Age
+        <input type="number" placeholder="Enter your age" required min="16" max="120" value="18">
+        </label>
+<br>
+<br>        
+        <label>DOB
+        <input type="date" placeholder="Enter your DOB" required>
+        </label>
+<br>
+<br>        
+        <label>TOB
+        <input type="time" placeholder="Enter your TOB" required>
+        </label>
+<br>
+<br>        
+        <label>Fav. Colour
+        <input type="color" placeholder="Enter your Fav. Colour" required>
+        </label>
+<br>
+<br>        
+        <label>Profile Photo
+        <input type="file" placeholder="Upload photo" required>
+        </label>
+<br>
+<br> 
+        <label>University Name
+        <input type="text" placeholder="Enter Uni Name" required name="uni" id="T4" value="LJKU" disabled>
+        </label>
+<br>
+<br>
+<!--SLIDER-->        
+        <label>Price 0
+        <input type="range" min="0" max="5000" value="2500">    5000
+        </label>
+<br>
+<br>        
+<!--RADIO-->
+        <label>Gender</label><br>
+        <label><input type="radio" name="g" value="Male">Male</label><br>
+        <label><input type="radio" name="g" value="Female">Feale</label><br>
+        <label><input type="radio" name="g" value="none">Prfer not ot say</label><br>
+<!--CHECKBOX-->
+<label>Hobbies</label><br>
+        <label><input type="checkbox" name="h" value="Cricket">Cricket</label><br>
+        <label><input type="checkbox" name="h" value="Badminton">Badminton</label><br>
+        <label><input type="checkbox" name="h" value="Basketball">Basketball</label><br>
+
+    <label>Address
+        <textarea rows="10" col="7">DEV</textarea>        
+    </label>
+  <br>
+<!--DROPDOWN-->
+<label>City
+        <select>
+                <option disabled hidden selected>---select city---</option>
+<optgroup label="Gujarat">
+                <option>Ahmedabad</option>
+                <option>Surat</option>
+                <option>Rajkot</option>
+</optgroup>
+<optgroup label="Maharastra">  
+                <option>Bombay</option>
+                <option>Pune</option>   </optgroup>  
+        </select>
+</label>
+<br>
+<br>
+    <!--BUTTONS-->
+    <input type="submit">
+    <input type="button" value="click me">
+    <input type="reset">
+<!--DATALIST-->
+
+<label>Browsers
+<input type="text" list="browsers" name="br">
+</label>
+<datalist id = "browsers">
+<option value="Chrome">Chrome</option>
+<option value="Firefox">Firefox</option>
+<option value="Edge">Edge</option>
+</datalist>
+    </fieldset>
+
+</form>
+</body>
+</html>
+
+
+<!--
+Hidden: data sent to server not visible to client
+Readonly:data sent to server and visible to client
+Disabled:data not sent to server and visible to client
+-->
