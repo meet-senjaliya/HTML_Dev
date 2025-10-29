@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectorDemo</title>
+    <style>
+        /* 1. Element Selector*/
+        div{
+            color:brown;
+            
+        }
+        /* 2. Universal Selector*/
+        *{
+            color:rgb(245, 208, 0);
+        }
+        /* 3. Id selector*/
+        #a{
+            color:green;
+        }
+
+        div#a{
+            color:blue;
+        }
+        .bgr{
+            background-color: red;
+            color:white
+        }
+        .bgp{
+            background-color: pink;
+        }
+        h1.bgp{
+            background-color: rgb(13, 99, 42);
+        }
+        /* Desendent */
+        div p{
+            color:orange;
+            text-align:center;
+        }
+        div>p{
+            color:magenta;
+            text-align:right;
+
+        }
+        [target]{
+            font-size: 30px;
+            background-color: rgba(0, 4, 240, 0.685);
+        }
+        [target=_blank]{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="bgp">Selectors</h1>
+    <div id ="a" class="bgr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam harum laborum fugit quisquam nemo veritatis quos vel culpa optio est!</div>
+    <div class="bgr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam harum laborum fugit quisquam nemo veritatis quos vel culpa optio est!</div>
+    <div class="bgr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam harum laborum fugit quisquam nemo veritatis quos vel culpa optio est!</div>
+
+
+    <div class="bgp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam harum laborum fugit quisquam nemo veritatis quos vel culpa optio est!</div>
+    <div class="bgp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam harum laborum fugit quisquam nemo veritatis quos vel culpa optio est!</div>
+<p class="bgp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae deleniti veritatis sapiente odio laborum omnis, tempore possimus, eum minima provident voluptates officiis, reprehenderit voluptas a? Magni ad perspiciatis esse necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae deleniti veritatis sapiente odio laborum omnis, tempore possimus, eum minima provident voluptates officiis, reprehenderit voluptas a? Magni ad perspiciatis esse necessitatibus.</p>
+<div>demo div 0.
+    <p>Para 1</p>
+    <article>demo article
+        <p>Para2</p>
+    </article>
+    <p>Para3</p>
+</div>
+<a href="f1.html ">Link to file</a>
+<a href="f1.html" target="_blank">Link to file 2</a>
+<a href="f1.html" target="_self">Link to file 3</a>
+</body>
+</html>
