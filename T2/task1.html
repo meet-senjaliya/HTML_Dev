@@ -1,0 +1,120 @@
+    <!--
+        Use appropiraite selectors to design given elements :
+
+        1. In the nested list each child of ul must have colour brown and size 20px. Any other subitem has colour orange and size 30px.
+        2. Given table of 4 rows and 3 columns even rows have bgcolor black, colour white and odd rows have bg color light green, color green. 
+           Only cell 5 has bg yellow size 50 px.
+        3. Given a form use attribute selector such that each diffrent input has a diffrent bg.
+        -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+        ul li {
+            color:orange;
+            font-size: 30px;
+        }
+        ul>li{
+            color:brown;
+            font-size:20px;
+        }
+
+        .odd{
+            background-color: lightgreen;
+            color:green;
+        }
+        .even{
+            background-color: black;
+            color: white;
+        }
+        #e{
+            background-color: yellow;
+            font-size:50px;
+        }
+
+        [type="text"]{
+            background-color:blue;
+        }
+        [type="password"]{
+            background-color:lightgreen;
+        }  
+        [type="email"]{
+            background-color: lightsalmon;
+        }      
+    </style>
+</head>
+<body>
+
+        <ul>
+            <li>Apples  
+                    <ol>
+                        <li>Green
+                            <ol type="a">
+                                    <li>High</li>
+                        </ol>
+                        </li>
+                        <li>Red</li>
+                    </ol>
+                
+            </li>
+            <li>Pinnable</li>
+            <li>Dragon
+                <ol type="a">
+                    <li>White</li>
+                    <li>Red</li>
+                </ol>
+            </li>
+        </ul>
+
+<table border="2" width="20%" rules="all">
+    <tr align="center" class="odd">
+        <td>a</td>
+        <td>b</td>
+        <td>c</td>
+    </tr>
+        <tr align="center" class="even">
+        <td>d</td>
+        <td id="e">e</td>
+        <td>f</td>
+    </tr>
+        <tr align="center" class="odd">
+        <td>g</td>
+        <td>h</td>
+        <td>i</td>
+    </tr>
+        <tr align="center" class="even">
+        <td>j</td>
+        <td>k</td>
+        <td>l</td>
+    </tr>
+</table>
+<br>
+    <form>
+  <fieldset>
+    <label>
+        First name:
+        <input type="text">
+    </label>
+    <br><br>
+        <label>
+        Password:
+        <input type="password">
+    </label>
+    <br><br>
+
+        <label>
+       Email:
+        <input type="email">
+    </label>
+    <br><br>
+        <input type="submit">
+        
+        <input type="button" value="bt">
+  </fieldset>
+    </form>
+</body> 
+</html>
