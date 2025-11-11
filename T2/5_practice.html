@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ani1 {
+            0% {
+                transform: translate(0px) rotate(0deg);
+                background-color: purple;
+
+            }
+
+            25% {
+                transform: translateX(200px) rotate(90deg);
+                background-color: green;
+            }
+
+            50% {
+                transform: translate(200px, 200px) rotate(180deg);
+                background-color: red;
+            }
+
+            75% {
+                transform: translateY(200px) rotate(270deg);
+
+                background-color: yellow;
+            }
+
+            100% {
+                transform: translate(0px) rotate(360deg);
+                background-color: purple;
+
+            }
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            animation-duration: 2s;
+            animation-name: ani1;
+            animation-iteration-count: infinite;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color: green;
+            position: relative;
+            animation-name: ani2;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ani2 {
+            from{
+                left: -2000px;
+                top: 0px;
+            }
+            to{
+                left: 3000px;
+                top: 1000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <h1>welcome to my website</h1>
+</body>
+
+</html>
