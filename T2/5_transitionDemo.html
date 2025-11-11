@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid purple;
+            background-color: aqua;
+            transition-duration: 5s;
+            transition-duration: 5s,10s;
+            /* transition-delay: 3s;
+            transition-timing-function: ease-in-out; */
+            transition: all 5s ease-in 0s;
+        }
+        div:hover{
+            background-color: magenta;
+            height: 400px;
+            width: 400px;
+            transform:scale(0.5,2) ;
+                }
+
+    </style>
+</head>
+<body>
+<div> </div>
+</body>
+</html>
