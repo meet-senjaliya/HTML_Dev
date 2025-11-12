@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        @media (min-width:800px){
+            #d{
+                flex-direction: column;
+            }
+        }
+        #d{
+            height: 50px;
+            width: 100%;
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            background-color: lightcoral;
+        }
+        #i1{
+            height: 50px;
+            width: 50px;
+            border-radius:50% ;
+            align-items: center;
+        }
+        .c{
+            margin: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- given a horizontal menu with img icon,home,about us,contact us links as soon as the screen size goes less than 800 px the menu items must appear verticallly -->
+    <div id="d">
+        <img src="b1.jpg" alt="" id="i1">
+        <div id="a1" class="c"> <a href="#">Home</a></div>
+        <div id="a2" class="c"><a href="#">About us</a></div>
+        <div id="a3" class="c"><a href="#">Contact us</a></div>
+    </div>
+</body>
+</html>
+
+<!-- selector or flex grid
+ch5 gradient transfor transition animation(90%) -->
