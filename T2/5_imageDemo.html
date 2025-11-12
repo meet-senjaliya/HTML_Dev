@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #i1 {
+            border-radius: 50%;
+        }
+
+        #i2 {
+            opacity: 50%;
+            transition: all 3s;
+        }
+
+        #i2:hover {
+            /* transform: rotateY(180deg); */
+            /* OR */
+            transform: scaleX(-1);
+        }
+
+        #i3 {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #i4 {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #i4:hover {
+            box-shadow: 10px 6px 5px grey;
+        }
+
+        #i5 {
+            height: 200px;
+            width: 200px;
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        #p5 {
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+        #l{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #r{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="b1.jpg" id="i1" alt="#" height="200px" width="200px"> <!--Circle-->
+    <img src="b1.jpg" id="i2" alt="#" height="200px" width="200px"><!--opacity-->
+    <img src="b1.jpg" id="i3" alt="#"><!--L-->
+    <img src="b1.jpg" id="i4" alt="#"><!--Thumbnail-->
+    <div id="p5">
+    <img src="b1.jpg" id="i5" alt="#">
+        <div id="l">hello left</div>
+        <div id="r">hello right</div>
+    </div>
+    <img src="b1.jpg" id="i6" alt="#">
+
+
+</body>
+
+</html>
