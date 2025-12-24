@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <!-- 
+    <script language="javascript" type="text/javascript">
+        var a = 9; /* global variable */
+        var b = 2; /* global variable */
+
+        function abc() {
+            var a = 5; /* local variable */
+            document.write(a);
+            document.write(b);
+        }
+        abc();
+        document.write(a);
+
+        var c = 10;
+        function f1() {
+            var d = 20;
+            console.log(c, d);
+        }
+        f1();
+        console.log(c)
+        console.log(d)
+    </script> 
+    -->
+
+
+    <!-- 
+    <script>
+        // var a=10;
+        // var a=5;
+        // a=50;
+        console.log(a)
+        var a = 5;
+    </script> 
+    -->
+
+
+
+    <!-- 
+    <script>
+        let x=2;
+        function ab(){
+            let y = 5;
+            console.log(y)
+        }
+        ab();
+        console.log(x)
+    </script>
+     -->
+
+
+
+    <!--
+    <script>
+        function xy() {
+            var b = 5;
+            if (b > 4) {
+                var a = 1;//let's scope is in BLOCK ONLY
+                // var a = 1;  var can be accessed outside IF also
+                console.log(a);
+            }
+            console.log(a);// a cant be accessed outside condition
+        }
+        xy();
+    </script> 
+    -->
+
+
+
+    <!-- 
+    <script>
+        let a = 5; 
+         a = 10;
+        a=50;
+        console.log(a);
+        // let a=50  use before declaration is not allowed
+    </script>
+     -->
+
+
+
+    <!-- 
+    <script>
+        let a = 10;
+        function f2(){
+            let a = 50;
+            console.log(a);
+        }
+        f2();
+        console.log(a)
+    </script> 
+    -->
+    <!-- 
+    <script>
+        const a = 5;
+        function f3(){
+           const a=9;
+            console.log(a);
+        }
+        f3();
+        console.log(a);
+    </script> 
+    -->
+    <!-- <script>
+        const a=5;
+            a=10;
+        a=50;
+        console.log(a)
+    </script> -->
+
+    <!-- <script>
+        var a = undefined; // the value is not assigned
+        var b = 23;
+        var c = "LJU";
+        var d = true;
+        var e = null;// intentional absence of 
+        document.write(typeof(a) + "<br>");
+        document.write(typeof(b) + "<br>");
+        document.write(typeof(c) + "<br>");
+        document.write(typeof(d) + "<br>");
+        document.write(typeof(e) + "<br>");
+    </script> -->
+    <script>
+        const person = {
+            firstName: "xyz",
+            lastName: "abc"
+        }
+        document.write(person.firstName + " ");
+        document.write(person["lastName"]);
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+<!--
+NOTES
+1. a = 5 --- Implicit(auto)
+2. var  : can be updated,reassigned any number of times
+3. let  : Does not allow to redeclare in same scope (allow in diffrent scopes)
+          allow to update value
+          let is block-scope whereas var is not block-scope
+4. const : redeclare and reaccess in different scope
+
+DataTypes:
+            ~Primitive(predefined/built-in-datatype):
+            1.String
+            2.Number
+            3.Boolean
+            4.Undefined
+            5.Null
+
+            ~Non_Primitive
+            1.Object
+            2.Array
+
+-->
