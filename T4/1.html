@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <!-- 
+    <script language="javascript" type="text/javascript">
+        var a = 9; /* global variable */
+        var b = 2; /* global variable */
+
+        function abc() {
+            var a = 5; /* local variable */
+            document.write(a);
+            document.write(b);
+        }
+        abc();
+        document.write(a);
+
+        var c = 10;
+        function f1() {
+            var d = 20;
+            console.log(c, d);
+        }
+        f1();
+        console.log(c)
+        console.log(d)
+    </script> 
+    -->
+
+
+    <!-- 
+    <script>
+        // var a=10;
+        // var a=5;
+        // a=50;
+        console.log(a)
+        var a = 5;
+    </script> 
+    -->
+
+
+
+    <!-- 
+    <script>
+        let x=2;
+        function ab(){
+            let y = 5;
+            console.log(y)
+        }
+        ab();
+        console.log(x)
+    </script>
+     -->
+
+
+
+    <!--
+    <script>
+        function xy() {
+            var b = 5;
+            if (b > 4) {
+                var a = 1;//let's scope is in BLOCK ONLY
+                // var a = 1;  var can be accessed outside IF also
+                console.log(a);
+            }
+            console.log(a);// a cant be accessed outside condition
+        }
+        xy();
+    </script> 
+    -->
+
+
+
+    <!-- 
+    <script>
+        let a = 5; 
+         a = 10;
+        a=50;
+        console.log(a);
+        // let a=50  use before declaration is not allowed
+    </script>
+     -->
+
+
+
+    <!-- 
+    <script>
+        let a = 10;
+        function f2(){
+            let a = 50;
+            console.log(a);
+        }
+        f2();
+        console.log(a)
+    </script> 
+    -->
+    <!-- 
+    <script>
+        const a = 5;
+        function f3(){
+           const a=9;
+            console.log(a);
+        }
+        f3();
+        console.log(a);
+    </script> 
+    -->
+    <!-- <script>
+        const a=5;
+            a=10;
+        a=50;
+        console.log(a)
+    </script> -->
+
+    <!-- <script>
+        var a = undefined; // the value is not assigned
+        var b = 23;
+        var c = "LJU";
+        var d = true;
+        var e = null;// intentional absence of 
+        document.write(typeof(a) + "<br>");
+        document.write(typeof(b) + "<br>");
+        document.write(typeof(c) + "<br>");
+        document.write(typeof(d) + "<br>");
+        document.write(typeof(e) + "<br>");
+    </script> -->
+    <script>
+        // object
+        const person = {
+            firstName: "xyz",
+            lastName: "abc"
+        }
+        document.write(person.firstName + "<br>");
+        document.write(person["lastName"] + "<br>");
+        // --------------------------------------      LEC 2         ----------------------
+        // array
+        const fruits = ["Apple", "Banana"];
+        document.write(fruits[0] + "<br>");
+        document.write(fruits[1] + "<br>");
+        document.write(fruits[2] + "<br>");
+
+        let flower = ["rose", "lily"];
+        flower.push('lotus')
+        console.log(flower)
+
+        let numbers = [10, 20, 30];
+        let removed = numbers.pop();
+        console.log(removed);
+        console.log(numbers);
+
+        let nums = [1, 2, 3, 4];
+        let squares = nums.map(num => num * num);
+        console.log(squares);
+
+        let ages = [12, 18, 20];
+        let adults = ages.filter(age => age >= 18);
+        console.log(adults);
+
+        let names = ["ABC", "XYZ", "PQR"];
+        names.forEach(names => {
+            console.log("Hello" + names)
+        })
+
+        let colours = ["red", "green", "blue"];
+        console.log(colours.includes("yellow"));
+        console.log(colours.includes("red"));
+
+        let users = [{ id: 1, name: "xyz" }, { id: 2, name: "pqr" }];
+        let user = users.find(u => u.id === 2)
+        console.log(user)
+        // document.write(user)
+
+        let loggedin = true;
+        if (loggedin) {
+            console.log("Welcome User")
+        }
+
+        let age = 19;
+        if (age >= 18) {
+            console.log("u can vote")
+        }
+        else {
+            console.log("u cannot vote")
+        }
+
+
+        let marks = 80;
+        if (marks >= 90) {
+            console.log("Grade A")
+        }
+        else if (marks >= 70) {
+            console.log("Grade B")
+        }
+        else {
+            console.log("Grade C")
+        }
+
+
+        //Switch
+        let role = "viewer";
+        switch (role) {
+            case "admin":
+                console.log("Full access");
+                break;
+            case "editor":
+                console.log("edit access");
+                break;
+            case "viewer":
+                console.log("read only");
+                break;
+            default:
+                console.log("No access");
+        }
+
+
+        // Ternary : x>y?x:y
+        let age1 = 21;
+        let result = age1 >= 18 ? "adult" : "minor";
+        console.log(result)
+    </script>
+</head>
+
+<body>
+</body>
+</html>
+
+
+<!--
+NOTES
+1. a = 5 --- Implicit(auto)
+2. var  : can be updated,reassigned any number of times
+3. let  : Does not allow to redeclare in same scope (allow in diffrent scopes)
+          allow to update value
+          let is block-scope whereas var is not block-scope
+4. const : redeclare and reaccess in different scope
+
+DataTypes:
+            ~Primitive(predefined/built-in-datatype):
+            1.String
+            2.Number
+            3.Boolean
+            4.Undefined
+            5.Null
+
+            ~Non_Primitive
+            1.Object
+            2.Array
+
+
+Method of Array:
+1)Push 
+2)Pop
+3)Map
+4)Filter
+5)forEach
+6)Include 
+7)Find
+
+Conditional Statement:
+1)if 
+2)if else
+3)if elseif
+4)switch case
+5)Ternanry
+-->
