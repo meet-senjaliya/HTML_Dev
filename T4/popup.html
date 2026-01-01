@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //alert
+        function warn() {
+            alert("this is warning msg");
+            document.write("warning");
+        }
+        // configuration
+        function conf() {
+            res = confirm("Do u want to coninue");
+            if (res == true) {
+                document.write("user want to continue");
+                return true;
+            }
+            else {
+                document.write("Quit");
+                return false;
+            }
+        }
+        //prompt 
+        function getval() {
+            var res = prompt("Enter usename", "your usename here");
+            document.write("hello " + res)
+        }
+
+
+        // PB 566
+        function alert1() {
+            alert(" Welcome User");
+        }
+        alert1()
+        let choice = confirm("Do u want to continue?");
+        if (choice == true) {
+            let name = prompt("enter name");
+            alert("hello " + name);
+            let age = prompt("enter age");
+            if (age > 18) {
+                alert("u are adult!");
+            }
+            else {
+                alert("u are minor")
+            }
+        }
+        else {
+            alert("goodbye")
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <input type="button" onclick="warn()" value="Click here(warn)"> -->
+    <br><br>
+    <!-- <input type="button" onclick="conf()" value="Click here(conf)"> -->
+    <!-- <input type="button" onclick="getval()" value="Click here(getval)"> -->
+
+
+</body>
+
+</html>

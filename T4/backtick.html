@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let message = `Hello`;
+        console.log(message);
+        let name = "abc";
+        let text = `Hello ${name}`
+
+        console.log(text);
+        let a = 5;
+        let b = 3;
+        let result = `sum is ${a + b}`
+        console.log(result);
+
+        const add = (a, b) => a + b;
+        console.log(add(2, 5));
+
+        const square = (x) => x * x;
+        console.log(square(2));
+
+        const sayhello = () => "Hello";
+        console.log(sayhello());
+
+        const multiply = (a, b) => {
+            const result = a * b;
+            return result;
+
+        }
+        console.log(multiply(2, 3));
+
+        const newfun = P =>
+            `val = ${P}`;
+        console.log(newfun(10));
+
+
+        function num1(a, b, ...c) {
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        num1(10, 20, 30, 40, 50);
+
+        function example(a, b, ...c) {
+            console.log(`${a}${b}`);
+            console.log(c);
+            console.log(c[0]);
+            console.log(c.length);
+            console.log(c.indexOf("PQR"));
+            console.log(c.indexOf("ABC"));
+
+        }
+        example('ABC', 'XYZ', 'PQR', 'MNB', 'STU');
+
+        arr1 = [50, 40, 30];
+        arr2 = [10, 20];
+        let arr_test1 = [arr1, arr2];
+        let arr_test2 = [...arr1, ...arr2];
+        console.log(arr_test1);
+        console.log(arr_test2);
+        console.log(Math.min(arr1)); // NaN
+        console.log(Math.min(...arr1));
+        console.log(`${arr1.sort()}`);
+
+        function multiply1(a = 2, b) {
+            return a * b;
+        }
+        let num2 = multiply1(5);
+        console.log(num2);
+
+        let num3 = multiply1(5, 8);
+        console.log(num3);
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

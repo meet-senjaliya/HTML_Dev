@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-----------MEET---------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>564</title>
+    <script>
+        while (true) {
+            let name = prompt("enter username");
+            if (name === " " || name === null || name === undefined) {
+
+            }
+            while (true) {
+                password = prompt("Enter password of atleat 8 chars ")
+                if (password.length >= 8) {
+                    break;
+                }
+            }
+
+            res = confirm("Are you sure you want to register with this username and password?");
+            if (res == true) {
+                alert("username: " + name + "  password: " + password);
+
+            }
+            else {
+                alert("Registration canceled")
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
