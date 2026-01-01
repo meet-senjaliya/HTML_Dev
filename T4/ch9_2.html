@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- WAF to be called on button click . Take one division with some text and no decoration initially 
+     Take font size and style as default argument ande pass background color and text color while passsing argument to function. Style should change on button click-->
+    <script>
+        function abc(bg, tx, size = "20px", fs = "italic") {
+            i = document.getElementById("d1")
+            i.style.backgroundColor = bg;
+            i.style.color = tx;
+            i.style.fontSize = size;
+            i.style.fontStyle = fs;
+        }
+    </script>
+    <div id="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sed
+    </div>
+    <br>
+    <button onclick="abc('black','gold','39px')">Click here</button>
+</body>
+
+</html>
