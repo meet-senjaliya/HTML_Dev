@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_events</title>
+</head>
+
+<body onkeypress="keycheck(event)">
+    <script>
+        // function myfunction() {
+        //     var a = document.getElementById("fname").value;
+        //     alert("Welcome " + a);
+        // }
+        function uppercase() {
+            var a = document.getElementById("name1");
+            a.value = a.value.toUpperCase();
+        }
+
+        function inputtxt(x) {
+            x.style.color = "blue";
+        }
+        function lowercase(b) {
+            b.value = b.value.toLowerCase();
+        }
+
+
+
+
+        function show(e) {
+            alert(e.target.value);
+        }
+        function check(e) {
+            alert(e.type);
+        }
+        function keycheck(e) {
+            // alert("key pressed is "+ e.key+" key's ascii value is "+ e.keyCode);
+        }
+        // function stop(e) {
+        //     e.preventDefault();
+        //     alert("Form submissin stoppped")
+        // }
+
+
+
+
+
+
+
+    </script>
+    <form action="#" onsubmit="stop(event)">
+        <label>
+            Enter name: <input type="text" id="fname">
+            <!-- <input type="submit"> -->
+            <br>
+            Enter name: <input type="text" id="name1" value="hello" onchange="uppercase()">
+            <br>
+            Enter name3: <input type="text" value="hello" onfocus="this.style.backgroundColor='yellow'"
+                oninput="inputtxt(this)" onblur="this.style.backgroundColor='white'">
+            <br>
+            Enter name4: <input type="text" value="HELLO" onblur="lowercase(this)">
+            <br>
+
+            <select onchange="show(event)">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+            <br>
+            <button onclick="check(event)">Click here</button>
+            <input type="submit">
+            <br>
+            <button id="btn">Click here</button>
+
+            <script>
+                // synatax : element.addEventListener("event",function)
+                document.getElementById("btn").addEventListener("click", function () {
+                    alert("button clicked");
+                });
+            </script>
+        </label>
+    </form>
+
+    <!-- --------------------------- -->
+    <script>
+
+        document.addEventListener("keyup", function () {
+            document.body.style.backgroundColor = "red";
+        });
+        document.addEventListener("keydown", function (event) {
+            alert("Key code: " + event.keyCode);
+            let key = event.key.toLowerCase();
+            if (["a", "e", "i", "o", "u"].includes(key)) {
+                alert("Vowel is pressed: " + key.toUpperCase());
+            }
+        });
+
+
+
+    </script>
+    <!-- ----------------------------- -->
+
+    <script>
+        function fun(e) {
+            val = e.button;
+            switch (val) {
+                case 0: alert("left click");
+                    break;
+                case 1: alert("middle click");
+                    break;
+                case 2: alert("right click");
+                    break;
+            }
+        }
+
+    </script>
+    <div style="width:100px; height:100px; border: 2px solid black;" onmousedown="fun(event)"></div>
+
+
+</body>
+
+</html>
+<!-- 
+QUESTIONS:
+w html and JS to perform the following task 
+1. Add 3 input text field 
+2. In the first text field convert the enterd text into upperCase when the value of the field is changed using the on changeform events
+3. In the second text field change the bg color to yellow when the field gets focused using onfocus event change the text color to blue while typing using oninput event
+4. In the third text field convert the enterd text into lowerCase when the value of the field loses focus  using the on onblur events
+
+
+Write JS to handle following key events
+1. Bg color should change to red after releasing the pressed key 
+2. Give key code for the key pressed
+3. Script should give msg vowel is pressed on pressing vowel key 
+
+NOTES:
+onfocus,oninput,onblur,onchange,onsubmit
+    onchange -- comulsory to change
+    onblur -- not compulsory to change
+
+
+event.target()
+event.type()
+event.key()
+event.preventDefault()
+50  
+41  +  9 
+ch8: 9M
+ch9: 18M
+ch10: 14M
+
+25M program -- max 6 each
+1/1.5M MCQs -- T4
+Descriptive -- upto 6M
+
+
+-->
