@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_1</title>
+    <script>
+
+        function fun() {
+            //obj=document.forms["f1"]["t1"].value;
+            //obj=document.f1.t1.value
+            obj = document.getElementById("i1").value;
+            alert(obj);
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="f1" onsubmit="fun()">
+        <input type="text" name="t1" id="i1">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
+
+<!--
+NOTES:
+
+3 ways:
+.forms["form_name"] ["element_name"].value 
+.form_name.element_name.value 
+.getElementById("i1").value -->

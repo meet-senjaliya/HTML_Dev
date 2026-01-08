@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  wap to give alert that will pop-up with text entered something if input field is empty on clicking submit button otherwise it will print entered value -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_2</title>
+    <script>
+
+        function fun() {
+
+            obj = document.getElementById("i1").value;
+            if (obj.length >= 1) {
+                alert(obj);
+            }
+            else {
+                alert("It is empty")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="f2" onsubmit="fun()">
+        username: <input type="text" name="t1" id="i1">
+        password: <input type="password" name="t2" id="i2">
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
