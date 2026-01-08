@@ -1,0 +1,41 @@
+<!-- --------------     RE9Regular Expresssion -------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_3</title>
+    <script>
+        function fun() {
+            //   pat = /abc/;
+            //   pat = /[abc]/;    "[]" means any combination of A or B or C
+            //   pat = /[^abc]/;   "[^]" means any NOT ONLY of A or B or C
+            //   pat = /[A-Z]/;    "[A-Z]" means compulsory any one of these 
+            //   pat = /[^A-Z]/;   
+            //   pat = /[a-z]/;   
+            //   pat = /[^a-z]/;   
+            //   pat = /[0-9]/;   
+            //   pat = /[^0-9]/;   
+            //   pat = /(x|y)/;
+            //   pat = /^A/; 
+            //   pat = /Bo*/;  [*] means occurence 0 or more times
+            // pat = /t$/        [$] means must ends with
+            u = obj = document.getElementById("i1").value;
+            if (pat.test(u)) {
+                alert("accpet");
+            }
+            else {
+                alert("reject")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="fun()">
+        <input type="text" id="i1">
+        <input type="submit">
+    </form>
+</body>
+</html>

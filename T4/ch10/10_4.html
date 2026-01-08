@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_4</title>
+    <script>
+        function fun(){
+            pat = /\W+/;
+            u = obj = document.getElementById("i1").value;
+            if (pat.test(u)) {
+                alert("accpet");
+            }
+            else {
+                alert("reject")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="fun()">
+        <input type="text" id="i1">
+        <input type="submit">
+    </form>
+</body>
+</html>
