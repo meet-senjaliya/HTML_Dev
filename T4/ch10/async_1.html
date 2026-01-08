@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async_1</title>
+    <!-- <script>
+        let order = new Promise((resolve, reject)=>
+        {
+            let success = true;
+            setTimeout(()=>{
+                if(success){
+                    resolve("order complete");
+                }
+                else{
+                    reject("order rejected");
+                }
+            },2000)
+        });
+
+        order.then(result=>console.log(result))
+            .catch(error=>console.log(error))
+            .finally(()=>console.log("process finished"));
+    </script> -->
+
+    <script>
+        age = document.getElementById("i1");
+        let success;
+        let order = new Promise((resolve, reject) => {
+            if (age > 18) {
+                success = true;
+            }
+            else {
+                success = false;
+            }
+            setTimeout(() => {
+                if (success) {
+                    resolve("u can vote");
+                }
+                else {
+                    reject("u cant vote");
+                }
+            }, 2000)
+        });
+
+        order.then(result => console.log(result))
+            .catch(error => console.log(error))
+            .finally(() => console.log("process finished"));
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="input" id="i1">
+    </form>
+</body>
+
+</html>
+<!-- 
+then() -- success
+catch() ---error
+finally() --always 
+
+-->
